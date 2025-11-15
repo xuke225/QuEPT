@@ -5,5 +5,10 @@ data/
 /.vscode
 nohup.out
 pretrained_models/
+# log and cache 
+log/
 cache/
-entry_cmd.sh
+experiment/
+*.log
+
+*.pt

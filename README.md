@@ -32,6 +32,7 @@ Elastic precision quantization enables multi-bit deployment via a single optimiz
     # Install LLaVA-NeXT
     cd src/lmm/
     mkdir 3rdparty
+    cd 3rdparty
     git clone https://github.com/LSY-noya/LLaVA-NeXT.git
     cd LLaVA-NeXT
     pip install -e .
@@ -42,6 +43,7 @@ Elastic precision quantization enables multi-bit deployment via a single optimiz
     cd lmms-eval
     pip install -e .
 
+    cd ..
     pip install -r requirements.txt
 
     bash run_llava_wa.sh

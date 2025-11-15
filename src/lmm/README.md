@@ -3,6 +3,7 @@
     ```bash
     # Install LLaVA-NeXT
     mkdir 3rdparty
+    cd 3rdparty
     git clone https://github.com/LSY-noya/LLaVA-NeXT.git
     cd LLaVA-NeXT
     pip install -e .
