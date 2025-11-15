@@ -1,0 +1,25 @@
+
+CUDA_VISIBLE_DEVICES=0 python main_vlm.py \
+--model_args pretrained=/model/ModelZoo/LVLM/llava-onevision-qwen2-7b-ov/ \
+--model_path /model/ModelZoo/LVLM/llava-onevision-qwen2-7b-ov/ \
+--model_name llava_onevision \
+--calib_dataset coco \
+--train_size 128 \
+--training_seqlen 2048 \
+--k_bits 16 \
+--v_bits 16 \
+--kv_group_size 128 \
+--output_dir ./log/llavaov/ \
+--rank_multiplier 16 \
+--quant_type 'weight_act' \
+--wbits 4 \
+--input_bits 4 \
+--clip_lr 2e-1 \
+--weight_lr 1e-4 \
+--epochs 15 \
+--topk_token 0.5 \
+--data_path /data/vlm_dataset/ShareGPT4V/data/sharegpt4v/coco_caption.json \
+--image_folder /data/vlm_dataset/ShareGPT4V/data/ \
+--eval_batch_size 4 \
+--log_samples_suffix 'mmmu_val' \
+--output_path ./output/

@@ -1,0 +1,9 @@
+*.ipynb
+*.ipynb_checkpoints/
+__pycache__/
+data/
+/.vscode
+nohup.out
+pretrained_models/
+cache/
+entry_cmd.sh
